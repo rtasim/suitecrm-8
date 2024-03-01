@@ -1,0 +1,79 @@
+## SugarCRM
+# Ignore custom .htaccess stuff.
+/.htaccess
+# Ignore the cache directory completely.
+# This will break the current behaviour. Which was often leading to
+# the misuse of the repository as backup replacement.
+# For development the cache directory can be safely ignored and
+# therefore it is ignored.
+/cache/
+# Ignore some files and directories from the custom directory.
+public/legacy/custom/history/
+public/legacy/custom/modulebuilder/
+public/legacy/custom/working/
+public/legacy/custom/modules/*/Ext/
+public/legacy/custom/application/Ext/
+public/legacy/upload/*
+public/legacy/upload_old/*
+public/legacy/custom_fresh/
+public/legacy/custom_old/
+public/legacy/vendor/*
+public/legacy/config.php
+public/legacy/cache/
+custom/blowfish/*
+index.php
+# Custom configuration should also be ignored.
+/config.php
+# The silent upgrade scripts aren't needed.
+/silentUpgrade*.php
+# Logs files can safely be ignored.
+*.log
+logs
+# Ignore the new upload directories.
+/upload/
+/upload:/
+nbproject/
+/.db_dump/
+document_templates/
+.idea/
+-restore/
+.openoffice/
+/myrestlog
+.vscode/*
+modules/AOD_Index/*
+/vendor/
+.env
+.env.test
+.env.dev
+.env.local
+themes/SuiteP/css/*.map
+themes/SuiteP/css/*/*.map
+themes/SuiteP/css/*/color-palette.css
+themes/SuiteP/css/*/variables.css
+tests/_output/*
+bower_components/
+node_modules/
+.php_cs.cache
+lang_cmp.php
+.kdev4/
+SuiteCRM.kdev4
+.vscode
+*.sln
+*.suo
+*.phpproj
+Thumbs.db
+Desktop.ini
+.DS_Store
+.DS_Store?
+.project
+public/legacy/modules/AOD_Index/Index/*
+public/legacy/custom/history/*
+public/legacy/custom/blowfish/*
+public/legacy/custom/modulebuilder/*
+public/legacy/custom/working/*
+public/legacy/custom/modules/*/Ext/
+public/legacy/custom/modules/unified_search_modules_display.php
+Heather.zip
+public/legacy/upload_27_10_2023
+public/legacy/.htaccess
+dist/*
